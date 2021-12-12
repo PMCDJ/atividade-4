@@ -86,6 +86,7 @@ function validaLogin() {
       localStorage.setItem("token", token);
       document.getElementById("statusLogin").innerHTML = "Sucesso!";
       document.getElementById("btnLoginClose").click();
+      document.getElementById("tableData").style = "blocK";
      
     })
     .catch(async (error) => {
