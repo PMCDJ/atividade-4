@@ -28,7 +28,6 @@ function validaRegisto() {
   let email = document.getElementById("usernameRegistar").value; 
   let senha = document.getElementById("passwordRegistar").value; 
   const statReg = document.getElementById("statusRegistar");
-  
 
   console.log(email)
   console.log(senha)
@@ -87,6 +86,7 @@ function validaLogin() {
       localStorage.setItem("token", token);
       document.getElementById("statusLogin").innerHTML = "Sucesso!";
       document.getElementById("btnLoginClose").click();
+     
     })
     .catch(async (error) => {
       statLogin.innerHTML = error

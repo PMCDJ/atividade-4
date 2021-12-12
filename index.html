@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">About</a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
           <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin" id="btnModalLogin">Login</a>
           <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalRegistar"> Register</a>
 
@@ -42,8 +42,8 @@
 
   <!-- Tabela de informação -->
   <div class="d-flex justify-content-center">
-    <table class="table table-hover table- col-lg-9" id="myTable">
-      <thead>
+    <table class="table table-hover table- col-lg-9" id="myTable"  >
+      <thead >
         <tr class="tr">
           <th class="th">headset</th>
           <th class="th">site</th>
@@ -52,31 +52,35 @@
         </tr>
       </thead>
 
-      <tbody class="td" id="tableData"></tbody>
+      <tbody  class="td" id="tableData"  ></tbody>
 
     </table>
   </div>
+
+
   <!--about-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">About</h5>
+          <h5 class="modal-title" id="aboutModalLabel">About</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Este api tem a funçao de verificar o preço de headsets em sites.neste momento suporta 2 sites (new egg e micro center).<br><br>
+          Este api tem a funçao de verificar o preço de headsets em sites.Neste momento suporta 2 sites (new egg e micro center).<br><br>
           
         </div>
       </div>
     </div>
   </div>
+
+
   <!-- modal de registo -->
-  <div class="modal fade" id="modalRegistar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="modalRegistar" tabindex="-1" aria-labelledby="registareModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
+          <h5 class="modal-title" id="registarModalLabel">
             Register
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -106,13 +110,15 @@
       </div>
     </div>
   </div>
+
+
 <!--modal de login-->
-  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
     data-bs-backdrop="static">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
+          <h5 class="modal-title" id="loginModalLabel">
             Insert your credentials
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
@@ -142,6 +148,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
