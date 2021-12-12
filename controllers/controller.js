@@ -61,7 +61,7 @@ async function enviaEmail(recipients, URLconfirm) {
 exports.verificaUtilizador = async (req, res) => {
   const confirmationCode = req.params.confirmationCode;
   db.crUd_ativar(confirmationCode);
-  const resposta = { message: "User is active!" };
+  const resposta = { message: "User ativo , volte a pagina de api e faça login !" };
   console.log(resposta);
   return res.send(resposta);
 };
