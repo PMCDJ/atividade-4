@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(255, 255, 255) !important
+}
+
+th {
+    min-width: 110px;
+}
+
+a:link {
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(228, 91, 0);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.col {
+    width: 100px;
+    height: 20%;
+}
+
+
+.dataTables_filter {
+    color:rgb(255, 255, 255) !important
+}
+
+.dataTables_length {
+    color: rgb(255, 255, 255) !important
+}
+
+.page-link {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(8, 8, 8) !important;
+}
+
+.page-link:hover {
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important
+}
+
+.page-link:active {
+    border-color: rgb(7, 7, 7) !important;
+    color: rgb(2, 2, 2) !important;
+}
+
+.dataTables_wrapper {
+    padding-top: 25px;
+}
+
+.row {
+    justify-content: center;
+    padding: 10px;
+}
