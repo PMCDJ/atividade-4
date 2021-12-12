@@ -7,8 +7,8 @@ $('#myTable').DataTable({
     columns:
     [
       {data: "headsetName"},
-      {data: "price"},
       {data: "sellerName"}, 
+      {data: "price"},
       {data: "url"}
       
     ],
