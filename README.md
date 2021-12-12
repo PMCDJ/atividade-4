@@ -10,5 +10,7 @@ Para fazer a verificação do email tem de se registar esse depois no terminal d
 basta copiar esse link e colocar no browser, vai aparecer numa pagina de ethereal email depois basta e copiar e colar o link que dão na parte inferior da pagina 
 depois basta voltar á pagina de browser do api e fazer login.
 
+ter login iniciado é necessario para ver as tabelas
+
 ---------------------------------------------------------------
 para a utilizaçao do api é bastante simples  tem dois sites a que vai buscar informaçao  pode-se procurar na barra de pesquisa na parte de direita por 1 dos sites (micro center, new egg) para so aparecer produtos deste site ou tambem pode pesquisar por marcas  causando com que so aparece produtos dessa marca.

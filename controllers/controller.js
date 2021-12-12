@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const axios = require("axios")
 const cheerio = require("cheerio")
-const db = require("../models/nedb"); // Define o MODEL que vamos usar
+const db = require("../models/nedb"); 
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
@@ -23,39 +23,35 @@ function authenticateToken(req, res) {
 }
 
 async function enviaEmail(recipients, URLconfirm) {
-  // Gera uma conta do serviço SMTP de email do domínio ethereal.email
-  // Somente necessário na fase de testes e se não tiver uma conta real para utilizar
   let testAccount = await nodemailer.createTestAccount();
 
-  // Cria um objeto transporter reutilizável que é um transporter SMTP
+  
   let transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
-    secure: false, // true para 465, false para outras portas
+    secure: false, 
     auth: {
-      user: testAccount.user, // utilizador ethereal gerado
-      pass: testAccount.pass, // senha do utilizador ethereal
+      user: testAccount.user, 
+      pass: testAccount.pass, 
     },
   });
 
-  // envia o email usando o objeto de transporte definido
+  
   let info = await transporter.sendMail({
-    from: '"Fred Foo 👻" <foo@example.com>', // endereço do originador
-    to: recipients, // lista de destinatários
-    subject: "Hello ✔", // assunto
-    text: "Link to activate: " + URLconfirm, // corpo do email
-    html: "<b>Link to activate: " + URLconfirm + "</b>", // corpo do email em html
+    from: '"Fred Foo 👻" <foo@example.com>', 
+    to: recipients, 
+    subject: "Hello ✔", 
+    text: "Link to activate: " + URLconfirm, 
+    html: "<b>Link to activate: " + URLconfirm + "</b>", 
   });
 
   console.log("Mensagem enviada: %s", info.messageId);
-  // Mensagem enviada: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  // A pré-visualização só estará disponível se usar uma conta Ethereal para envio
+ 
   console.log(
     "URL para visualização prévia: %s",
     nodemailer.getTestMessageUrl(info)
   );
-  // URL para visualização prévia: https://ethereal.email/message/WaQKMgKddxQDoou...
+  
 }
 
 exports.verificaUtilizador = async (req, res) => {
