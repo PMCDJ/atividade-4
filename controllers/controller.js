@@ -61,7 +61,7 @@ async function enviaEmail(recipients, URLconfirm) {
 exports.verificaUtilizador = async (req, res) => {
   const confirmationCode = req.params.confirmationCode;
   db.crUd_ativar(confirmationCode);
-  const resposta = { message: "User ativo , volte a pagina de api e faça login !" };
+  const resposta = { message: "User ativo , volte a pagina de api e faça login  !" };
   console.log(resposta);
   return res.send(resposta);
 };
@@ -169,7 +169,7 @@ exports.findall = (req, res) => {
 
         $("li.product_wrapper").each((i, element) => {
           const headsetName = $(element).find("div.normal").text()
-          const price = (Math.round(parseFloat((($(element).find("div.price").text().replace(",", "").replace("$", "") * 0.8700) * 100) / 100))).toFixed(0) + " €"
+          const price = (Math.round(parseFloat((($(element).find("div.price").text().replace(",", "").replace("$", "") * 0.8700) * 100) / 100))).toFixed(0) + " €" || (Math.round(parseFloat((($(element).find("span.price").text().replace(",", "").replace("$", "") * 0.8700) * 100) / 100))).toFixed(0) + " €"
           const sellerUrl = "https://www.microcenter.com/"
           const url = sellerUrl + $(element).find("div.normal").children("h2").children("a").attr("href")
           const sellerName = "Micro Center"
