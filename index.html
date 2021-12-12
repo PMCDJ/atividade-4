@@ -28,6 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">About</a>
           <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin" id="btnModalLogin">Login</a>
           <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalRegistar"> Register</a>
 
@@ -55,7 +56,21 @@
 
     </table>
   </div>
-
+  <!--about-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">About</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Este api tem a funçao de verificar o preço de headsets em sites.neste momento suporta 2 sites (new egg e micro center).<br><br>
+          
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- modal de registo -->
   <div class="modal fade" id="modalRegistar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
