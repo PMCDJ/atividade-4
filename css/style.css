@@ -22,13 +22,13 @@ a:visited {
 }
 
 .col {
-    width: 100px;
+    width: 100x;
     height: 20%;
 }
 
 
 .dataTables_filter {
-    color:rgb(255, 255, 255) !important
+    color:rgb(0, 0, 0) !important
 }
 
 .dataTables_length {
